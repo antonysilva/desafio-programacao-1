@@ -5,19 +5,20 @@
 **About this project:**
 Esta é uma aplicação Rails cuja funcionalidade é permitir que o usuário possa realizar o upload de arquivos no formato`.tab`com informações referentes as compras realizadas.
 
-**For Running and testing this Project:**
+**Running and testing this Project:**
 
-* You'll need:
-        - `Ruby 2.5.0 or higher (this project was made using Ruby 2.6.3)`
-	    -  `Rails 6.0.0rc1`
-	    - `PostgreSQL 9.6 (But youl should be OK with a higher version)`
+### This application was developed using:
+* `Ruby 2.6.3`;
+* `Rails 5.2.3`;
+* `PostgreSQL 11.2`;
 
-* Running the application:
-        - clone this project
-        - run the command `bundle install`
-        - make the initial configuration of the database through the commands: `rake db:drop && rake db:create && rake db:test:prepare && rake db:migrate`
-        - run the `rspec` command to run the test suite
-        - run the `rails s` command to start the application server
+### Running the application:
+* clone this project;
+* run the command `bundle install`;
+* make the initial configuration of the database through the commands: `rake db:drop && rake db:create && rake db:migrate && rake db:test:prepare`;
+* create a `.env.development` file similar to `.env.example` and add the credentials of your facebook application;
+* run the `rspec` command to run the test suite;
+* run the `rails s` command to start the application server;
 
 ----------
 # Desafio de programação 1

@@ -1,4 +1,4 @@
-class CreateItems < ActiveRecord::Migration[6.0]
+class CreateItems < ActiveRecord::Migration[5.2]
   def change
     create_table :items do |t|
       t.string :description, null: false

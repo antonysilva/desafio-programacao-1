@@ -1,0 +1,19 @@
+<nav class='navbar navbar-default header-nav'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <%= link_to 'Purchases File Parser', root_path, class: 'navbar-brand' %>
+    </div>
+
+    <div class='nav navbar-nav navbar-right'>
+      <ul class='list-inline'>
+        <% if user_signed_in? %>
+          <li class='list-inline-item'><%= link_to 'New upload', new_upload_path %></li>
+          <li class='list-inline-item'><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li class='list-inline-item'><%= link_to 'Sign in', new_user_session_path %></li>
+          <li class='list-inline-item'><%= link_to 'Sign up', new_user_registration_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -7,13 +7,16 @@ gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5'
-gem 'webpacker', '~> 4.0'
+gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.3.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -23,6 +26,7 @@ group :development, :test do
   gem 'faker'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
+  gem 'dotenv-rails'
 end
 
 group :development do
